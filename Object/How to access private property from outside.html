@@ -1,0 +1,29 @@
+<html>
+    <head><title>Access private property</title>
+    
+    </head>
+    <body>
+        <Script>
+            var Mobile = function(model_no,sp1){
+                this.model = model_no;
+                this.ram = "4GB";
+                this.color = "Blue";    // public
+                var price = 4000;      // private
+                this.sp =  sp1;           
+                this.sellingprice = function(){
+                    return(price)
+                };
+                this.data = function(){
+                    document.write("Model No.: "+ this.model+"<br>"+
+                    "Price: "+this.sellingprice())
+                
+                };
+
+
+            }
+            var samsung =new Mobile("Realme 6",9999)
+            var nokia =new Mobile("3310",5999)
+            samsung.data()
+        </Script>
+    </body>
+</html>

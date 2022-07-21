@@ -1,0 +1,23 @@
+<html>
+    <head><title>Arrow function With parameter</title>
+
+    </head>
+    <body>
+        <script>
+/* if passing 1 para so in this case parenthesis and curly breces and return keyword are also optional only 1 parameter case*/
+
+            // Arrow function = Function expression + Anonymous Function
+            //var arrow_fun = () =>   // This is arrow function
+            //var arrow_fun = (a,b) =>   // If 2 parameter want value
+            //var arrow_fun = (a,b = 20) =>   // if 1 para and 1 Default value
+            var arrow_fun = (a,...args) =>   // 1 para and Rest para
+            //var arrow_fun = () =>   // This is arrow function
+            {
+                document.write(a+" "+ args);
+            };
+            arrow_fun(10,20,30,40,50,60); // This function not call before declaring functio
+            
+            
+        </script>
+    </body>
+</html>

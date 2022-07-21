@@ -1,0 +1,23 @@
+<html>
+    <head><title>Passing Anonymous function as argument </title>
+
+    </head>
+    <body>
+        <script>
+            function disp(myfun)
+            {
+               // return myfun;
+                return myfun();
+            /*if you access data inside of anonymous function so myfun replace myfun()*/
+
+            }
+            // Here passing anonymous function as argument
+            document.write(disp(function()  
+                {
+                    return "Hello World"
+                }
+            ));
+            
+        </script>
+    </body>
+</html>

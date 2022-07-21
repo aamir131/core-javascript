@@ -1,0 +1,26 @@
+<html>
+    <head><title>Nested function</title>
+
+    </head>
+    <body>
+        <script>
+            //This nested function as well as closure function
+            function outer()// this is function decleration
+            {
+                var j = "Outer Function"
+                document.write(j + "<br>");
+                function inner()
+                {
+                    var k = "Inner Function"
+                    document.write(k+"<br>");
+                    document.write(j + "<br>");// here created closure function
+                }
+                inner();
+               //inner function always access outer function but outer function not access
+                document.write(j + "<br>");
+
+            }
+            outer();
+        </script>
+    </body>
+</html>

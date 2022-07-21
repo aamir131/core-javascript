@@ -1,0 +1,27 @@
+<html>
+    <head><title>Nested Do While loop</title>
+
+    </head>
+    <body>
+        <Script>
+            var i = 0;
+            do      
+            {
+                document.write("<strong>Outer Loop</strong>")
+                document.write(i);
+                i++;
+                document.write("<br>")
+                var j = 0;
+                do
+                {
+                    document.write("Inner Loop")
+                    document.write(j);
+                    j++;
+                    document.write("<br>")
+                }while(j<4)
+            }while(i<3)
+
+        
+        </Script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+
+<html>
+    <head><title>parameterized constructor</title>
+
+
+    </head>
+    <body>
+        
+        <script>
+            //class
+            class Mobile {
+                constructor(model_no,color){
+                    // Instance member
+                    this.model= model_no;
+                    this.clr = color;
+                   
+                };
+                // prototype member
+                display(){
+                    return "Model: "+ this.model+ "<br>"+"Price: 3000"+"<br>"+"Color: "+this.clr
+                }
+            }
+
+            var Nokia = new Mobile("1310","Gray");
+            document.write(Nokia.display())
+
+        </script>
+    </body>
+</html>

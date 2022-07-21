@@ -1,0 +1,23 @@
+<html>
+    <head><title>Immediately Invoked Function Expression</title>
+
+    </head>
+    <body>
+        <script>
+            //IIFE 
+            //(function (){document.write("Hello World")})()
+            // IIFE with Variable
+            /*(function ()
+            {
+                var a = 15; // this variable are accessable only this function
+                document.write(a);
+            })();*/
+            // IIFE with Parameter
+            (function (a,b)
+            {
+                document.write(a+  " "+ b);
+            })(10,20);
+            
+        </script>
+    </body>
+</html>

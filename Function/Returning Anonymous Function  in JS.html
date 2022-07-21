@@ -1,0 +1,22 @@
+<html>
+    <head><title>Returning Anonymous function </title>
+
+    </head>
+    <body>
+        <script>
+            function disp(a)
+            {
+                return function(b)
+                {
+                    return a+b
+                };
+            }
+            var rf = disp(10); 
+            /* calling disp function so come
+            return function(b){return a+b}; and store to rf
+            */
+            document.write(rf(20));
+            
+        </script>
+    </body>
+</html>

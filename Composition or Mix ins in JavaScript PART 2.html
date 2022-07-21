@@ -1,0 +1,56 @@
+
+<html>
+    <head><title>Composition or Mix ins</title>
+
+    </head>
+    <body>
+        
+        <script>
+
+            
+            var eating = {
+                eat: function(){
+                    return "I can eat:<br>"
+                }
+            };
+
+            var walking = {
+                walk: function(){                   // features
+                    return "I can walk:<br>"
+                }
+            };
+
+            var talking = {
+                talk: function(){                   // features
+                    return "I can talk:<br>"
+                }
+            };
+
+            // Human Class
+            var Human = function (){
+
+            }
+            // compositing features to human
+            Object.assign(Human.prototype, eating, walking, talking)
+            var Rahul =new Human();
+            var Raj =new Human();
+
+            // Robot Class
+            var Robot = function(){
+
+            }
+            // compositing features to Robot
+            Object.assign(Robot.prototype, talking, walking)
+            var Robot = new Robot();
+            document.write(Rahul.eat())
+            document.write(Rahul.walk())
+            document.write("Raj Talking: "+Raj.talk())
+            document.write("Robot:<br>")
+            document.write("Robot Walking: "+Robot.walk())
+            document.write("Robot Talking: "+Robot.talk())
+
+
+
+        </script>
+    </body>
+</html>

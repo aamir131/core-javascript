@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>super() Method</title>
+    </head>
+    <body>
+        <script>
+            class Father{
+                constructor(money){
+                    this.Fmoney = money;
+                }
+                showFMoney(){
+                    return this.Fmoney+" Father Money<br>";
+                }
+            };
+            // single Inheritance 
+            class Son extends Father{
+                constructor(money){
+                    super(money);   //super method
+                }
+                showSMoney(){
+                    return "Son Money"
+                }
+            };
+            var s = new Son(1000)
+            document.write(s.showFMoney())
+
+        </script>
+    </body>
+</html>

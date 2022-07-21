@@ -1,0 +1,23 @@
+<html>
+    <head><title>Prototype</title>
+        
+    </head>
+    <body>
+        <script>
+            var Mobile = function (model_no){   // class
+                // instance member
+                this.model = model_no;
+                this.price = 5000;
+
+            };
+            var samsung = new Mobile('Galaxy');
+            var nokia = new Mobile('3310');
+            //classname.prototype.key = 'value'
+            //prototype member
+            Mobile.prototype.color = 'white';   // prototype
+            document.write(samsung.color);
+            console.log(samsung)
+            
+        </script>
+    </body>
+</html>

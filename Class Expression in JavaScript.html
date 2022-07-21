@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>class Expression</title>
+    </head>
+    <body>
+        <script>
+            var Mobile = class Mobile2{
+                constructor(model_no,color){
+                    this.model = model_no;
+                    this.clr = color;
+                }
+                show() {
+                return "Model: "+this.model+"<br>"+"Price: 5000 <br>"+"Color: "+this.clr
+            }
+            };
+            
+            var Nokia = new Mobile("3310","Black");
+            document.write(Nokia.show())
+        </script>
+    </body>
+</html>

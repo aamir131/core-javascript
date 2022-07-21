@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>for of loop</title>
+    </head>
+    <body>
+        <script>
+            //Defining
+            var elm = prompt("Enter a number of Element: ");
+            var mak = [];           //declaring
+            //input
+            for(let i= 0;i<=elm;i++){
+                mak[i] = prompt("Enter a name: ")
+            }
+            //Display
+           /* for(let i =0; i<=elm; i++){
+                document.write(mak[i]+"<br>")
+            }
+            */
+            for(let value of mak){
+                document.write(value+"<br>")
+            }
+            
+            
+
+
+            
+
+
+
+
+
+        </script>
+    </body>
+</html>

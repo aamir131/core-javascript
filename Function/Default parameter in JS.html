@@ -1,0 +1,29 @@
+<html>
+    <head><title>Default parameter</title>
+
+    </head>
+    <body>
+        <Script>
+            // Default Parameter
+            function disp(a,b,c,d="20")     // parameter
+            {
+                document.write("A: "+ a + " <br>")
+                document.write("B: "+ b + "<br>")
+                document.write("C: "+ c + "<br>")
+                document.write("D: "+ d + "<br>")
+                //here use arguments object
+            }
+            
+            disp(10,20,30);     // argument or parameter
+            //disp(10,20,30,50)
+            // Array
+            function add(i,j=[101])
+            {
+                document.write("I: "+i + "<br>")
+                document.write("J: "+j + "<br>")
+            }
+            add(35,[10])
+            
+        </Script>
+    </body>
+</html>

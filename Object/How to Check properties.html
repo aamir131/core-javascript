@@ -1,0 +1,63 @@
+<html>
+    <head><title>Check Property</title>
+
+    </head>
+    <body>
+        <script>
+            
+/*          // using typeof operator
+            function Mobile(model_no){
+                this.model = model_no;
+                this.memory = function(){
+                    document.write(this.model+"<br>"+ "64GB")
+                }
+            }
+            var realme = new Mobile("Realme 5")
+            if (typeof realme.memory!=='undefined')
+            {
+                document.write('Available');
+            }
+            else
+            {
+                document.write("Doesn't exist")
+            }
+*/
+/*
+            //using in operator
+            function Mobile(model_no){
+                this.model = model_no;
+                this.memory = function(){
+                    document.write(this.model+"<br>"+ "64GB")
+                }
+            }
+            var realme = new Mobile("Realme 5")
+            if ('model' in realme)
+            {
+                document.write('Available');
+            }
+            else
+            {
+                document.write("Doesn't exist")
+            }
+            */
+
+            //using hasOwn Property
+           
+            function Mobile(model_no){      //constructor
+                this.model = model_no;      // property
+                this.memory = function(){   //method
+                    document.write(this.model+"<br>"+ "64GB")
+                }
+            }
+            var realme = new Mobile("Realme 5")
+            if (realme.hasOwnProperty("model"))
+            {
+                document.write('Available');
+            }
+            else
+            {
+                document.write("Doesn't exist")
+            }
+        </script>
+    </body>
+</html> 

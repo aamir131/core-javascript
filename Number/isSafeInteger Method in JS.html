@@ -1,0 +1,25 @@
+<!Doctype html>
+<head>
+    <title>isSafeInteger Method</title>
+</head>
+<body>
+    <script>
+        
+        // this method is used to check number is SisSafeInteger or not
+        //those value are (2^53-1) to (-2^53-1) in this range that value are safeinteger
+        document.write(Number.isSafeInteger()+"<br>")
+       
+        document.write(Number.isSafeInteger(100)+"<br>") 
+        document.write(Number.isSafeInteger(200-100)+"<br>")
+        document.write(Number.isSafeInteger(22.50)+"<br>")
+        document.write(Number.isSafeInteger(0.50)+"<br>")
+        document.write(Number.isSafeInteger("hello")+"<br>")
+        document.write(Number.isSafeInteger("100")+"<br>") 
+        document.write(Number.isSafeInteger(69858977979889658909876543234568556)+"<br>")
+        
+              
+        
+        
+    </script>
+</body>
+</html> 

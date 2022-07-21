@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head><title>retrieve month and DayName</title></head>
+<body>
+    <script>
+        
+        // month as number 0-11 Ex:- 0=Jan
+        // week Day as number 0-6 Ex:- 0 = sun
+
+        var dat =new Date()
+        
+        document.write(FormData(dat)+"<br>")
+        
+
+        function FormData(pd){
+            var date = pd.getDate();
+            var month = pd.getMonth();
+            month++;
+            var Year =  pd.getFullYear()
+            return date + " - "+month+" - "+Year
+        }
+        
+       
+
+       
+   
+    </script>
+</body>
+</html>

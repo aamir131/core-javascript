@@ -1,0 +1,37 @@
+<html>
+    <head><title>Varible scope</title>
+
+    </head>
+    <body>
+        <Script>
+            // global variable
+            var i = "This is global varible" //This is Global Variable this is call anywhere
+            document.write(i+ "<br>"); // This is outside the function
+           
+            function add()
+            {
+                
+                if(true)
+                {
+                    k = "If inside function create variable without using var keyword in this case create a global not local"
+                    document.write(i+ "<br>"); 
+                  
+                }
+                document.write(i+ "<br>") // This is inside the function
+            }
+            add()
+
+            // Local Varibale
+            function loc()
+            {
+                
+                var j = "This is Local varible"
+                document.write(j+ "<br>")
+                document.write(i+"<br>")
+                document.write(k+ "<br>");
+            }
+            loc()
+            
+        </Script>
+    </body>
+</html> 

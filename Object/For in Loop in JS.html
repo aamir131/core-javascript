@@ -1,0 +1,23 @@
+<html>
+    <head><title>For in loop</title>
+
+        <script>
+            function Mobile(model_no){
+                this.model = model_no;
+                this.color = "Crystel Blue";
+                this.ram = "4GB";
+                this.price = function(){
+                    
+                    document.write(this.model+ "Price Rs. 4000 <br>")
+                };
+            }
+            var nokia = new Mobile("Realme 6")
+            for(var spaces in nokia){
+                if (typeof nokia[spaces] !== 'function')
+                    document.write(spaces + ": "+nokia[spaces] + "<br>");
+            }
+            
+        </script>
+
+    </head>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head><title>Constructor</title>
+
+    </head>
+    <body>
+        <script>
+            /*
+            function Mobile(){
+                this.model = "1110";
+                this.price = function(){
+                    document.write(this.model+ "Price Rs. 4000")
+                }
+            }
+            var nokia = new Mobile()
+            nokia.price();
+            */
+
+            function Mobile(model_no){
+                this.model = model_no;
+                this.price = function(){
+                    document.write(this.model+"<br>"+ "Price Rs. 4000")
+                }
+            }
+            var realme = new Mobile("Realme 5")
+            realme.price();
+        </script>
+    </body>
+</html> 

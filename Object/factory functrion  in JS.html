@@ -1,0 +1,38 @@
+<html>
+    <head><title>factory function</title>
+
+    </head>
+    <body>
+        <script>
+            //factory function without patameter
+            /*
+            function mobile(){
+                return {
+                    model:"Galexy",
+                    price: function(){return "Price Rs. 5000"
+                    }
+                };
+            }
+            var lg = mobile()
+            document.write(lg.model+ " "+ lg.price()+ "<br>")
+*/
+             //factory function with patameter
+            function mobile(model_no){
+                return {
+                    model:model_no,
+                    price: function(){return "Price Rs. 5000"
+                    }
+                };
+            }
+            var nokia = mobile("3310")
+            document.write(nokia.model+ " "+ nokia.price()+ "<br>")
+            var oppo = mobile('A7')
+            document.write(oppo.model+ " "+ oppo.price()+ "<br>")
+            var 
+            realme = mobile("Realme 6")
+            document.write(realme.model+ " "+ realme.price()+ "<br>")
+
+         
+        </script>
+    </body>
+</html> 

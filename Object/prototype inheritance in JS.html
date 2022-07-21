@@ -1,0 +1,30 @@
+<html>
+    <head><title>prototype inheritance</title>
+
+    </head>
+    <body>
+        
+        <script>
+            
+            //Super Class
+            var Mobile = function(){
+                this.a = 10;
+            }
+            Mobile.prototype.z = 30
+
+            //Sub-Class
+            var Samsung = function(){
+                Mobile.call(this)
+                this.b = 20
+            }
+
+            //prototype inheritance
+            Samsung.prototype = Object.create(Mobile.prototype)//used this to access parent prototype
+            Samsung.prototype.constructor = Mobile
+            var s = new Samsung()
+            document.write(s.a + " <br>")
+            document.write(s.b + " <br>")
+            document.write(s.z + " <br>")
+        </script>
+    </body>
+</html>

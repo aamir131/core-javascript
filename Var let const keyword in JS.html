@@ -1,0 +1,33 @@
+<html>
+    <head><title>Var Let Const</title>
+
+    </head>
+    <body>
+        <script>
+            
+           function myvar()
+           {
+               var a = 15;
+               if (true)
+               {
+                   var a =  25; // this is distroy outside the function
+                   document.write(a+ " <br>")
+               }
+               document.write(a+ " <br>")
+           }
+            myvar();
+            // let Keyword
+            function mylet()
+           {
+               let a = 70;
+               if (true)
+               {
+                   let a =  78; // this is  accessable only our block and distroy
+                   document.write(a+ " <br>")
+               }
+               document.write(a+ " <br>")
+           }
+            mylet();
+        </script>
+    </body>
+</html>

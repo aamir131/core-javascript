@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head><title>retrieve month and DayName</title></head>
+<body>
+    <script>
+        
+        // month as number 0-11 Ex:- 0=Jan
+        // week Day as number 0-6 Ex:- 0 = sun
+
+        var dat =new Date()
+        var month = dat.getMonth();
+        var day = dat.getDay();
+
+        document.write(getMonthName(month)+"<br>")
+        document.write(getDayName(day)+"<br>")
+
+        
+        function getMonthName(monthnumber){
+            var monthname = ["January","February","March","April",
+            "May","June","July","August","September","November","December"];
+            return monthname [monthnumber];
+        }
+        
+
+        function getDayName(daynumber){
+            var DayName = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            return DayName[daynumber];
+        }
+        
+   
+       
+    </script>
+</body>
+</html>

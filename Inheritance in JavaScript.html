@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Inhritance </title>
+    </head>
+    <body>
+        <script>
+            class Father{
+                showFMoney(){
+                    return "Father Money<br>";
+                }
+            };
+            // single Inheritance 
+            class Son extends Father{
+                showSMoney(){
+                    return "Son Money"
+                }
+            };
+            var s = new Son()
+            document.write(s.showSMoney())
+            // multi level Inheritance
+            class Grandson extends Son{
+                showGMoney(){
+                    return "Grandon Money"
+                }
+            };
+            var g = new Grandson()
+            document.write("<br>"+g.showFMoney()+"<br>"+g.showSMoney())
+        </script>
+    </body>
+</html>

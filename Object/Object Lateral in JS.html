@@ -1,0 +1,32 @@
+<html>
+    <head><title>Object Lateral</title>
+
+    </head>
+    <body>
+        <script>
+            //Declaration and Initalizing of Object
+        /*
+           var fees = { };
+           fees.rohit = 67;
+           fees.raja = 79;
+           fees.ashwin = 90;
+           fees["Rohit Sharma"]  = 45
+           document.write(fees["Rohit Sharma"]) // this is not Possible with . operator
+        */
+        /* fees['Rohit'] = 100;     //this Property
+           fees['Rahul'] = 200;
+           fees['Raj'] = 300;
+           document.write(fees['Rohit'])
+         */
+
+           var fee = { };
+           fee['total'] = function(){return (300+49);};//Anonymous function with object
+           fee.total1 = function() {return(300+20+ "<br>");};       // This is Method
+           document.write(fee.total())
+           document.write(fee['total1']())
+
+
+
+        </script>
+    </body>
+</html> 

@@ -1,0 +1,26 @@
+<html>
+    <head><title>Function argument object</title>
+
+    </head>
+    <body>
+        <Script>
+            
+            function disp(a,b)     // parameter
+            {
+                var l = arguments.length //This Property is used to check How many arguments are passing
+                for (i = 0;i<l;i++)
+                {
+                    document.write(arguments[i] + " ")
+                }
+                //document.write(a);
+                //document.write(b);
+                //document.write(arguments[0] + " ");
+                //document.write(arguments[1])
+                //document.write(l)
+            }
+            
+            disp("Hello "," World",28);     // argument or parameter
+            
+        </Script>
+    </body>
+</html>

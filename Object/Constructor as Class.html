@@ -1,0 +1,29 @@
+<html>
+    <head><title>Constructor as class</title>
+    
+    </head>
+    <body>
+        <Script>
+            var Mobile = function(model_no,price){
+                this.model = model_no;
+                this.ram = "4GB";
+                this.color = "Blue";        //this is public suppose i make private so do
+                this.price = 4000;      // like var.price 
+                this.sp =  price;           // only replace this to var
+                this.sellingprice = function(){
+                    return(this.price + this.sp)
+                };
+                this.data = function(){
+                    document.write("Model No.: "+ this.model+"<br>"+
+                    "Price: "+this.sellingprice())
+                
+                };
+
+
+            }
+            var samsung =new Mobile("Realme 6",9999)
+            var nokia =new Mobile("3310",5999)
+            samsung.data()
+        </Script>
+    </body>
+</html>

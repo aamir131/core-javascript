@@ -1,0 +1,24 @@
+<html>
+    <head><title>Rest parameter</title>
+
+    </head>
+    <body>
+        <Script>
+            // Rest Parameters
+            function restshow(a,...args)  // This is Rest Parameter
+            {
+                console.log("A: "+ a +"<br>");
+                console.log("Arguments: "+ args+ "<br>");
+            }
+            restshow(10,20,30,40,50);
+            // Arguments object
+            function show(a)
+            {
+                console.log("A: "+ a+ "<br>"); //console are run in web broswer console
+                console.log(arguments);
+            }
+            show(10,20,30,40,50)
+            
+        </Script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>how to get input from user in 2D </title>
+    </head>
+    <body>
+        <script>
+            // Definig 2D Array
+            var rows = 2;
+            var cols = 3;
+            var mak = new Array(rows)
+            for(var i = 0;i<rows; i++){
+                mak[i] = new Array(cols);
+            }
+            //Input for Array
+            for(var i = 0;i<rows; i++){
+                for (var j = 0; j<cols; j++){
+                    mak[i][j] = prompt("Enter Name: ")
+                }
+                document.write("<br>")
+            }
+            //Display
+            for (var i = 0; i<rows; i++){
+                for (var j = 0; j<cols; j++){
+                    document.write(i+" "+j+" "+mak[i][j]+"|")
+                }
+                document.write("<br>")
+            }
+        
+
+        </script>
+    </body>
+</html>

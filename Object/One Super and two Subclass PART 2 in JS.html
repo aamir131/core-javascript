@@ -1,0 +1,53 @@
+<html>
+    <head><title>One Super and 2 Sub-Class part 2</title>
+
+    </head>
+    <body>
+        
+        <script>
+
+            function extend(child,parent){
+                child.prototype = Object.create(parent.prototype);
+                child.prototype.constructor = child;
+            }
+            
+            
+            //Super Class
+            var Mobile = function(){
+                
+            }
+            //prototype method
+            Mobile.prototype.getmodel = function(){
+                return this.model;
+            }
+
+            //Sub-Class
+            var Samsung = function(model,price){
+                this.model = model;
+                this.price = price;
+            }
+
+            //Sub-Class
+            var Nokia = function(model){
+                this.model = model;
+                
+            }
+            // Inheritnce
+            extend(Samsung,Mobile)
+            extend(Nokia,Mobile)
+            
+
+            Samsung.prototype.getPrice = function(){    //Prototype method
+                return this.price
+            }
+           
+            
+
+            var sam = new Samsung("Galaxy",8000)
+            var nok = new Nokia("1310")
+            console.log(sam.getmodel())
+            console.log(nok.getmodel())
+            console.log(sam.getPrice())
+        </script>
+    </body>
+</html>
